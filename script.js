@@ -1,21 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Header Scroll Effect
-    const header = document.getElementById('header');
+    const header = document.querySelector('.header-inner');
     
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
-            header.classList.add('scrolled');
+            header.parentElement.classList.add('scrolled');
         } else {
-            header.classList.remove('scrolled');
+            header.parentElement.classList.remove('scrolled');
         }
     });
 
-    // Reveal Animation on Scroll
+    // Simple Reveal Animation on Scroll
     const revealElements = document.querySelectorAll('.reveal');
     
     const revealOptions = {
-        threshold: 0.15,
-        rootMargin: "0px 0px -50px 0px"
+        threshold: 0.1,
+        rootMargin: "0px 0px -20px 0px"
     };
 
     const revealOnScroll = new IntersectionObserver(function(entries, observer) {
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         revealOnScroll.observe(el);
     });
 
-    // Trigger reveal for elements already in view on load
+    // Trigger reveal for elements already in view
     setTimeout(() => {
         revealElements.forEach(el => {
             const rect = el.getBoundingClientRect();
