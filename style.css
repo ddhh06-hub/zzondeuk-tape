@@ -122,6 +122,10 @@ nav a:hover {
     letter-spacing: 0.05em;
 }
 
+.mobile-br {
+    display: none;
+}
+
 .hero-posters {
     display: flex;
     width: 100%;
@@ -344,6 +348,10 @@ footer a:hover {
     .poster-title {
         font-size: 0.7rem;
         margin-top: 0.5rem;
+    }
+
+    .mobile-br {
+        display: block;
     }
 }
 
