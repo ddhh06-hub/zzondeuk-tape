@@ -325,6 +325,26 @@ footer a:hover {
     .header-inner { padding: 1rem 5%; flex-direction: column; gap: 1rem; }
     nav { gap: 1rem; }
     .section-title { font-size: 1.5rem; }
+
+    .hero-center-text {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.2rem;
+        white-space: normal;
+        width: 85%;
+        max-width: 320px;
+        line-height: 1.4;
+    }
+
+    .hero-posters {
+        height: 50vh;
+        gap: 0.5rem;
+        padding: 0 1rem;
+    }
+
+    .poster-title {
+        font-size: 0.7rem;
+        margin-top: 0.5rem;
+    }
 }
 
 /* YouTube SVG styling */
