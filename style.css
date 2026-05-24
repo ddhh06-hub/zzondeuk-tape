@@ -326,3 +326,16 @@ footer a:hover {
     nav { gap: 1rem; }
     .section-title { font-size: 1.5rem; }
 }
+
+/* YouTube SVG styling */
+.youtube-svg {
+    color: var(--text-primary);
+    opacity: 0.5;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.youtube-svg:hover {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
